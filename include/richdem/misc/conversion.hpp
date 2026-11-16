@@ -8,7 +8,7 @@
 
 namespace richdem {
 
-void convert_arc_flowdirs_to_richdem_d8(
+inline void convert_arc_flowdirs_to_richdem_d8(
   const Array2D<d8_flowdir_t> &arc_flowdirs,
   Array2D<d8_flowdir_t> &rd_flowdirs
 ){

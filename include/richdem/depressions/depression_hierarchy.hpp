@@ -10,7 +10,7 @@
 #include <richdem/common/radix_heap.hpp>
 #include <richdem/common/timer.hpp>
 
-#if RICHDEM_USE_BOOST_SERIALIZATION
+#ifdef RICHDEM_USE_BOOST_SERIALIZATION
   #include <boost/serialization/vector.hpp>
 #endif
 

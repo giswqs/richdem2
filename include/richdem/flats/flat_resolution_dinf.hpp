@@ -70,7 +70,7 @@ static float dinf_masked_FlowDir(
   return rg;
 }
 
-void dinf_flow_flats(
+inline void dinf_flow_flats(
   const Array2D<int32_t> &flat_resolution_mask,
   const Array2D<int32_t> &groups,
   Array2D<float> &flowdirs

@@ -14,7 +14,7 @@
 
 namespace richdem {
 
-GDALDataType peekLayoutType(const std::string &layout_filename) {
+inline GDALDataType peekLayoutType(const std::string &layout_filename) {
   LayoutfileReader lf(layout_filename);
 
   while(lf.next()){
@@ -38,7 +38,7 @@ GDALDataType peekLayoutType(const std::string &layout_filename) {
   throw std::runtime_error("Empty layout file!");
 }
 
-int peekLayoutTileSize(const std::string &layout_filename) {
+inline int peekLayoutTileSize(const std::string &layout_filename) {
   LayoutfileReader lf(layout_filename);
 
   GDALAllRegister();
